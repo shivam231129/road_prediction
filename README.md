@@ -1,4 +1,5 @@
-readme_content = """
+markdown
+Copy code
 # Road Detection Model
 
 ## Table of Contents
@@ -38,8 +39,8 @@ DeepLabV3 is a state-of-the-art semantic segmentation model developed by Google.
 
 ### Dataset Structure
 
-The dataset is organized into training and testing sets, with the following structure:
-###
+The dataset is organized in the following directory structure:
+
 dataset/
 ├── train/
 │ ├── images/
