@@ -1,23 +1,23 @@
 
-- **`train/images/`**: Contains training images.
-- **`train/masks/`**: Contains corresponding ground truth masks for training images.
-- **`test/`**: Contains test images for which predictions will be made.
+# - **`train/images/`**: Contains training images.
+# - **`train/masks/`**: Contains corresponding ground truth masks for training images.
+# - **`test/`**: Contains test images for which predictions will be made.
 
-### Preprocessing
+# ### Preprocessing
 
-Images and masks are resized to 256x256 pixels and normalized. The following transformations are applied:
+# Images and masks are resized to 256x256 pixels and normalized. The following transformations are applied:
 
-- **Resize**: (256, 256)
-- **ToTensor**: Convert images and masks to PyTorch tensors
-- **Normalization**: Standardize the image pixel values
+# - **Resize**: (256, 256)
+# - **ToTensor**: Convert images and masks to PyTorch tensors
+# - **Normalization**: Standardize the image pixel values
 
-## Training the Model
+# ## Training the Model
 
-The model is trained using a binary cross-entropy loss with logits, suitable for binary segmentation tasks.
+# The model is trained using a binary cross-entropy loss with logits, suitable for binary segmentation tasks.
 
 ### Training Script
 
-```python
+#```python
 import torch
 import torch.nn as nn
 from torchvision.models.segmentation import deeplabv3_resnet50
